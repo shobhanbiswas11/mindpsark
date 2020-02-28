@@ -9,7 +9,7 @@ statesArrObj.states.forEach(s => {
   districts[s.state] = s.districts;
 });
 
-const bloodGroups = ["A+", "A-", "B+", "B-", "AB+", "O+", "O-"];
+const bloodGroups = ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"];
 
 export default {
   states,
