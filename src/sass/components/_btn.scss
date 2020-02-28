@@ -1,0 +1,42 @@
+.btn {
+  outline: none;
+  border-radius: 3rem;
+  cursor: pointer;
+  border: none;
+
+  &:active {
+    border-style: none;
+  }
+
+  &--registration {
+    font-size: 2.4rem;
+    font-weight: 900;
+    padding: 1rem 2rem;
+    color: $white;
+    background-color: $color-primary;
+    &:hover {
+      background-color: darken($color-primary, 5);
+    }
+  }
+}
+
+.hamberger-btn {
+  display: none;
+  background-color: white;
+  padding: 0.5rem;
+  .line {
+    width: 3rem;
+    height: 2px;
+    background-color: $dark-grey;
+    &:not(:last-child) {
+      margin-bottom: 0.8rem;
+    }
+  }
+  @include respond(tab-land) {
+    display: block;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 10000;
+  }
+}

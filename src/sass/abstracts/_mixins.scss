@@ -1,0 +1,89 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Media Query Manager
+
+/*
+  0 - 600px       phone
+  600 - 900px     Tablet portrait
+  900 - 1200px    Tablet lanscape
+  [1200 - 1800]   is where our nrmal styles apply
+  1800px +        Big desktop
+  */
+
+@mixin respond-phone {
+  @media screen and( max-width: 600px) {
+    @content;
+  }
+}
+
+/*
+  respond-phone{
+    width : 90%
+  }
+  */
+
+/*
+  ________breakpoint choicce:
+  - phone
+  - tab-port
+  - tab-land
+  - big-deskop
+  */
+
+// 1em = 16px,, this is alwas true for media queries
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    //600px
+    @media screen and( max-width: 37.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-port {
+    //900px
+    @media screen and( max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  // @if $breakpoint == tab-port {
+  //   //768px
+  //   @media screen and( max-width: 48em) {
+  //     @content;
+  //   }
+  // }
+
+  @if $breakpoint == tab-land {
+    //1200px
+    @media screen and( max-width: 75em) {
+      @content;
+    }
+  }
+
+  // @if $breakpoint == tab-land {
+  //   //1000px
+  //   @media screen and( max-width: 62.5em) {
+  //     @content;
+  //   }
+  // }
+
+  @if $breakpoint == big-desktop {
+    //1800px
+    @media screen and( min-width: 112.5em) {
+      @content;
+    }
+  }
+}
+
+/*
+  @include respond(phone) {
+    width: 90%;
+  }
+  */

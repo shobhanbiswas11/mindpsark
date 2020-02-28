@@ -1,0 +1,18 @@
+.donorUnit {
+  &:not(:last-of-type) {
+    margin-bottom: 4rem;
+  }
+  display: flex;
+  &__blood-gorup {
+    background-color: $color-primary;
+    margin-right: 2rem;
+    align-self: flex-start;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

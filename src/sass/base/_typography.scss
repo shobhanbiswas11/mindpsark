@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap");
+body {
+  font-family: Roboto, sans-serif;
+  color: $grey;
+}
+
+input {
+  color: inherit;
+}
+
+.form {
+  color: $dark-grey;
+}
+
+.donorUnit {
+  font-size: 1.6rem;
+  &__blood-gorup {
+    font-size: 2.8rem;
+    font-weight: 900;
+  }
+}
+
+.donor-display-area__msg {
+  font-size: 2rem;
+  text-align: center;
+  color: $lighter-grey;
+}
+
+.h1 {
+  font-size: 3.6rem;
+  line-height: 4rem;
+  font-weight: 400;
+}
+
+.slogan {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: $darkest-grey;
+  line-height: 3rem;
+
+  @media screen and (max-height: 800px) and (min-width: 1200px) {
+    font-size: 1.6rem;
+  }
+}
+
+.h2 {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-weight: 400;
+}
+
+.h3 {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.p {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  &:not(:last-of-type) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.info {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+}
+
+.b {
+  font-weight: 700;
+}
+
+.thin {
+  font-weight: 100;
+}
+.color {
+  color: $color-primary;
+}
+
+.nl {
+  display: block;
+}

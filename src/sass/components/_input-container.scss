@@ -1,0 +1,71 @@
+.input-container {
+  position: relative;
+
+  &-group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &--small {
+    width: 12rem !important;
+  }
+  &--x-small {
+    width: 6rem !important;
+  }
+  &__input {
+    font-size: inherit;
+    border: none;
+    border-bottom: $light-grey solid 1px;
+    width: 100%;
+    padding-bottom: 0.5rem;
+    transition: 0.4s;
+
+    &::placeholder {
+      color: $lighter-grey;
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom: lighten($color-primary, 30) solid 1px;
+      & + .input-container__suggetionBox {
+        height: 30rem;
+        border: 1px solid $lightest-grey;
+        overflow: scroll;
+      }
+    }
+  }
+
+  &__suggetionBox {
+    z-index: 1000;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: $white;
+    transition: 0.2s;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    li {
+      color: $light-grey;
+      padding: 1rem;
+      border-bottom: 1px solid $lightest-grey;
+      transition: 0.2s;
+      cursor: pointer;
+      &:hover {
+        color: $grey;
+        background-color: $lightest-grey;
+      }
+    }
+  }
+
+  &__error {
+    color: red;
+    font-size: 1.2rem;
+  }
+
+  .error-state {
+    border-bottom: red solid 1px;
+  }
+}

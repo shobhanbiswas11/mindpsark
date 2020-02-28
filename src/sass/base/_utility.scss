@@ -1,0 +1,199 @@
+// Utility For Margin
+.mb-xs {
+  margin-bottom: $x-small;
+}
+.mb-s {
+  margin-bottom: $small;
+}
+.mb-m {
+  margin-bottom: $medium;
+}
+.mb-l {
+  margin-bottom: $large;
+}
+.mb-xl {
+  margin-bottom: $x-large;
+}
+
+.mt-xs {
+  margin-top: $x-small;
+}
+.mt-s {
+  margin-top: $small;
+}
+.mt-m {
+  margin-top: $medium;
+}
+.mt-l {
+  margin-top: $large;
+}
+.mt-xl {
+  margin-top: $x-large;
+}
+
+.mr-xs {
+  margin-right: $x-small;
+}
+.mr-s {
+  margin-right: $small;
+}
+.mr-m {
+  margin-right: $medium;
+}
+.mr-l {
+  margin-right: $large;
+}
+.mr-xl {
+  margin-right: $x-large;
+}
+
+.ml-xs {
+  margin-left: $x-small;
+}
+.ml-s {
+  margin-left: $small;
+}
+.ml-m {
+  margin-left: $medium;
+}
+.ml-l {
+  margin-left: $large;
+}
+.ml-xl {
+  margin-left: $x-large;
+}
+
+.m-xs {
+  margin: $x-small;
+}
+.m-s {
+  margin: $small;
+}
+.m-m {
+  margin: $medium;
+}
+.m-l {
+  margin: $large;
+}
+.m-xl {
+  margin: $x-large;
+}
+
+// Utility For Padding
+.pb-xs {
+  padding-bottom: $x-small;
+}
+.pb-s {
+  padding-bottom: $small;
+}
+.pb-m {
+  padding-bottom: $medium;
+}
+.pb-l {
+  padding-bottom: $large;
+}
+.pb-xl {
+  padding-bottom: $x-large;
+}
+
+.pt-xs {
+  padding-top: $x-small;
+}
+.pt-s {
+  padding-top: $small;
+}
+.pt-m {
+  padding-top: $medium;
+}
+.pt-l {
+  padding-top: $large;
+}
+.pt-xl {
+  padding-top: $x-large;
+}
+
+.pr-xs {
+  padding-right: $x-small;
+}
+.pr-s {
+  padding-right: $small;
+}
+.pr-m {
+  padding-right: $medium;
+}
+.pr-l {
+  padding-right: $large;
+}
+.pr-xl {
+  padding-right: $x-large;
+}
+
+.pl-xs {
+  padding-left: $x-small;
+}
+.pl-s {
+  padding-left: $small;
+}
+.pl-m {
+  padding-left: $medium;
+}
+.pl-l {
+  padding-left: $large;
+}
+.pl-xl {
+  padding-left: $x-large;
+}
+
+.p-xs {
+  padding: $x-small;
+}
+.p-s {
+  padding: $small;
+}
+.p-m {
+  padding: $medium;
+}
+.p-l {
+  padding: $large;
+}
+.p-xl {
+  padding: $x-large;
+}
+
+// ________________________
+
+// Others
+.text-center {
+  text-align: center;
+}
+.block-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.f {
+  display: flex;
+}
+.f-sb {
+  display: flex;
+  justify-content: space-between;
+}
+.f-sb-c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.f-sa {
+  display: flex;
+  justify-content: space-around;
+}
+.f-se {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.global-wrapper {
+  width: $website-width;
+  max-width: $website-max-width;
+  margin-left: auto;
+  margin-right: auto;
+}
